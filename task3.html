@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    
+<header class="header">
+    <div class="header-inner">
+        <div class="title">
+            <span class="small-label">Здравсвуйте, вот мои</span>
+            <strong>Практические задания за 2 семестр</strong>
+        </div>
+
+        <nav class="menu">
+            <a href="task1.html">Задание 1</a>
+            <a href="task2.html">Задание 2</a>
+            <a href="task3.html" class="active">Задание 3</a>
+        </nav>
+    </div>
+</header>
+
+
+    <main class="page">
+        <section class="hero">
+            <div>
+                <span class="number">03</span>
+                <h1>Конвертер скорости</h1>
+                <p>Значения автоматически пересчитываются при изменении любого поля</p>
+            </div>
+        </section>
+
+        <section id="app" class="converter-card">
+            <div class="speed-box">
+                <span>км/ч</span>
+                <input type="number" v-model="kmh" @input="fromKmh">
+            </div>
+
+            <div class="equal">⇄</div>
+
+            <div class="speed-box">
+                <span>м/с</span>
+                <input type="number" v-model="ms" @input="fromMs">
+            </div>
+        </section>
+    </main>
+
+    
+<footer class="footer">
+    <p>Работу выполнила: <b>Лермонтова Екатерина</b></p>
+</footer>
+
+
+    <script src="js/task3.js"></script>
+</body>
+</html>

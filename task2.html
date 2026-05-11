@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<header class="header">
+    <div class="header-inner">
+        <div class="title">
+            <span class="small-label">Здравсвуйте, вот мои</span>
+            <strong>Практические задания за 2 семестр</strong>
+        </div>
+
+        <nav class="menu">
+            <a href="task1.html">Задание 1</a>
+            <a href="task2.html" class="active">Задание 2</a>
+            <a href="task3.html">Задание 3</a>
+        </nav>
+    </div>
+</header>
+
+
+    <main class="page">
+        <section class="hero hero-form">
+            <div>
+                <span class="number">02</span>
+                <h1>Форма с выводом данных</h1>
+                <p>Заполните форму</p>
+            </div>
+
+            <button class="theme-btn" onclick="changeTheme()">Сменить тему</button>
+        </section>
+
+        <section class="form-layout">
+            <div class="form-panel">
+                <h2>Введите данные</h2>
+
+                <label>
+                    Фамилия
+                    <input type="text" id="lastName" placeholder="Например, Иванова">
+                </label>
+
+                <label>
+                    Имя
+                    <input type="text" id="firstName" placeholder="Например, Анна">
+                </label>
+
+                <label>
+                    Электронная почта
+                    <input type="email" id="email" placeholder="mail@example.com">
+                </label>
+
+                <label>
+                    Телефон
+                    <input type="tel" id="phone" placeholder="+7 900 000 00 00">
+                </label>
+
+                <button onclick="sendForm()">Отправить</button>
+            </div>
+
+            <div id="result" class="result-card hidden">
+                <span class="small-label">Результат</span>
+                <h2>Введенные данные</h2>
+
+                <p><b>Фамилия:</b> <span id="rLast"></span></p>
+                <p><b>Имя:</b> <span id="rName"></span></p>
+                <p><b>Почта:</b> <span id="rEmail"></span></p>
+                <p><b>Телефон:</b> <span id="rPhone"></span></p>
+            </div>
+        </section>
+    </main>
+
+    
+<footer class="footer">
+    <p>Работу выполнила: <b>Лермонтова Екатерина</b></p>
+</footer>
+
+
+    <script src="js/task2.js"></script>
+</body>
+</html>
